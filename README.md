@@ -1,2 +1,11 @@
-# website
-The Dota True Sight website. Get a true look on the game!
+# fresh project
+
+### Usage
+
+Start the project:
+
+```
+deno task start
+```
+
+This will watch the project directory and restart as necessary.
