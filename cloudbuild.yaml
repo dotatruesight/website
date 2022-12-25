@@ -1,6 +1,3 @@
-variables:
-  GIT_REVISION: TESTING123
-
 steps:
 # Docker Build
 - name: 'gcr.io/cloud-builders/docker'
