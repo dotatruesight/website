@@ -10,4 +10,4 @@ RUN deno cache main.ts --import-map=import_map.json
 
 EXPOSE 8000
 
-CMD ["run", "-A", "--no-lock", "main.ts"]
+CMD ["run", "-A", "main.ts"]
