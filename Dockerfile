@@ -1,14 +1,13 @@
-FROM denoland/deno:1.29.1
+FROM denoland/deno:1.25.0
 
-# The port that your application listens to.
-EXPOSE 80
-EXPOSE 443
+ARG GIT_REVISION
+ENV DENO_DEPLOYMENT_ID=${GIT_REVISION}
 
-# Prefer not to run as root.
-USER root
+WORKDIR /app
 
-# These steps will be re-run upon each file change in your working directory:
-ADD . .
-# Compile the main app so that it doesn't need to be compiled each startup/entry.
+COPY . .
+RUN deno cache main.ts --import-map=import_map.json
 
-CMD ["deno", "task", "start"]
+EXPOSE 8000
+
+CMD ["run", "-A", "--no-lock", "main.ts"]
