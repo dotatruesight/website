@@ -1,7 +1,7 @@
 steps:
 # Docker Build
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['build', '--build-arg', '$GIT_REVISION', '-t', 'us.gcr.io/dota-true-sight/website', '.']
+  args: ['build', '-t', 'us.gcr.io/dota-true-sight/website', '.']
 
 # Docker Push
 - name: 'gcr.io/cloud-builders/docker'
