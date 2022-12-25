@@ -1,7 +1,8 @@
 FROM denoland/deno:1.25.0
 
 ARG GIT_REVISION
-ENV DENO_DEPLOYMENT_ID=${(git rev-parse HEAD)}
+RUN git rev-parse HEAD | export DENO_DEPLOYMENT_ID=$1
+# ENV DENO_DEPLOYMENT_ID=${(git rev-parse HEAD)}
 
 WORKDIR /app
 
