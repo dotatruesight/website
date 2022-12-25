@@ -1,11 +1,11 @@
 steps:
 # Docker Build
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['build', '-t', 'us-docker.pkg.dev/dota-true-sight/us.gcr.io/website', '.']
+  args: ['build', '-t', 'us-central1-docker.pkg.dev/dota-true-sight/website', '.']
 
 # Docker Push
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['push', 'us-docker.pkg.dev/dota-true-sight/us.gcr.io/website']
+  args: ['push', 'us-central1-docker.pkg.dev/dota-true-sight/website']
 
 # Restart instance
 - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
