@@ -1,8 +1,11 @@
+variables:
+  GIT_REVISION: TESTING123
+
 steps:
 # Docker Build
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['build', '--build-arg', 'GIT_REVISION=$(git rev-parse HEAD)', '-t', 'us.gcr.io/dota-true-sight/website', '.']
-# us-central1-docker.pkg.dev/dota-true-sight/website
+  args: ['build', '--build-arg', '$GIT_REVISION', '-t', 'us.gcr.io/dota-true-sight/website', '.']
+
 # Docker Push
 - name: 'gcr.io/cloud-builders/docker'
   args: ['push', 'us.gcr.io/dota-true-sight/website']
