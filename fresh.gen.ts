@@ -9,9 +9,11 @@ import * as $2 from "./routes/api/users/[steamid].ts";
 import * as $3 from "./routes/index.tsx";
 import * as $4 from "./routes/live.tsx";
 import * as $5 from "./routes/matches.tsx";
+import * as $6 from "./routes/opendota.tsx";
 import * as $$0 from "./islands/Counter.tsx";
-import * as $$1 from "./islands/live_matches.tsx";
-import * as $$2 from "./islands/matches.tsx";
+import * as $$1 from "./islands/NavigationBar.tsx";
+import * as $$2 from "./islands/live_matches.tsx";
+import * as $$3 from "./islands/matches.tsx";
 
 const manifest = {
   routes: {
@@ -21,11 +23,13 @@ const manifest = {
     "./routes/index.tsx": $3,
     "./routes/live.tsx": $4,
     "./routes/matches.tsx": $5,
+    "./routes/opendota.tsx": $6,
   },
   islands: {
     "./islands/Counter.tsx": $$0,
-    "./islands/live_matches.tsx": $$1,
-    "./islands/matches.tsx": $$2,
+    "./islands/NavigationBar.tsx": $$1,
+    "./islands/live_matches.tsx": $$2,
+    "./islands/matches.tsx": $$3,
   },
   baseUrl: import.meta.url,
   config,
