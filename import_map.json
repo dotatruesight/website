@@ -10,6 +10,10 @@
     "twind/": "https://esm.sh/twind@0.16.17/",
     "routes/": "./routes/",
     "static/": "./static/",
-    "components/": "./components/"
+    "islands/": "./islands/",
+    "components/": "./components/",
+    "x/": "https://deno.land/x/",
+    "std/": "https://deno.land/std@0.170.0/",
+    "steamy/": "http://raw.githubusercontent.com/ybabts/steamy/b78d003d716a51858a9b7809716fe7715b0d24fa/src/"
   }
 }
