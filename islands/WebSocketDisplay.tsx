@@ -8,7 +8,7 @@ const WebSocketDisplay: FunctionComponent<{accountid: string}> = ({ accountid })
   useEffect(() => {
     const connectWebSocket = () => {
       // Replace this URL with your WebSocket server's address
-      const websocketUrl = 'ws://localhost/api/gsi?accountid='+accountid;
+      const websocketUrl = 'ws://dotatruesight.com/api/gsi?accountid='+accountid;
       const websocket = new WebSocket(websocketUrl);
 
       websocket.onmessage = (event: MessageEvent) => {
