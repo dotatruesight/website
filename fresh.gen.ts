@@ -3,33 +3,39 @@
 // This file is automatically updated during development when running `dev.ts`.
 
 import config from "./deno.json" assert { type: "json" };
-import * as $0 from "./routes/api/live/[steamid].ts";
-import * as $1 from "./routes/api/matches/[matchid].ts";
-import * as $2 from "./routes/api/users/[steamid].ts";
-import * as $3 from "./routes/index.tsx";
-import * as $4 from "./routes/live.tsx";
-import * as $5 from "./routes/matches.tsx";
-import * as $6 from "./routes/opendota.tsx";
+import * as $0 from "./routes/api/gsi.ts";
+import * as $1 from "./routes/api/live/[steamid].ts";
+import * as $2 from "./routes/api/matches/[matchid].ts";
+import * as $3 from "./routes/api/users/[steamid].ts";
+import * as $4 from "./routes/gsi/[accountid].tsx";
+import * as $5 from "./routes/index.tsx";
+import * as $6 from "./routes/live.tsx";
+import * as $7 from "./routes/matches.tsx";
+import * as $8 from "./routes/opendota.tsx";
 import * as $$0 from "./islands/Counter.tsx";
 import * as $$1 from "./islands/NavigationBar.tsx";
-import * as $$2 from "./islands/live_matches.tsx";
-import * as $$3 from "./islands/matches.tsx";
+import * as $$2 from "./islands/WebSocketDisplay.tsx";
+import * as $$3 from "./islands/live_matches.tsx";
+import * as $$4 from "./islands/matches.tsx";
 
 const manifest = {
   routes: {
-    "./routes/api/live/[steamid].ts": $0,
-    "./routes/api/matches/[matchid].ts": $1,
-    "./routes/api/users/[steamid].ts": $2,
-    "./routes/index.tsx": $3,
-    "./routes/live.tsx": $4,
-    "./routes/matches.tsx": $5,
-    "./routes/opendota.tsx": $6,
+    "./routes/api/gsi.ts": $0,
+    "./routes/api/live/[steamid].ts": $1,
+    "./routes/api/matches/[matchid].ts": $2,
+    "./routes/api/users/[steamid].ts": $3,
+    "./routes/gsi/[accountid].tsx": $4,
+    "./routes/index.tsx": $5,
+    "./routes/live.tsx": $6,
+    "./routes/matches.tsx": $7,
+    "./routes/opendota.tsx": $8,
   },
   islands: {
     "./islands/Counter.tsx": $$0,
     "./islands/NavigationBar.tsx": $$1,
-    "./islands/live_matches.tsx": $$2,
-    "./islands/matches.tsx": $$3,
+    "./islands/WebSocketDisplay.tsx": $$2,
+    "./islands/live_matches.tsx": $$3,
+    "./islands/matches.tsx": $$4,
   },
   baseUrl: import.meta.url,
   config,
