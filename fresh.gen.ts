@@ -13,10 +13,11 @@ import * as $6 from "./routes/live.tsx";
 import * as $7 from "./routes/matches.tsx";
 import * as $8 from "./routes/opendota.tsx";
 import * as $$0 from "./islands/Counter.tsx";
-import * as $$1 from "./islands/NavigationBar.tsx";
-import * as $$2 from "./islands/WebSocketDisplay.tsx";
-import * as $$3 from "./islands/live_matches.tsx";
-import * as $$4 from "./islands/matches.tsx";
+import * as $$1 from "./islands/GSIDraft.tsx";
+import * as $$2 from "./islands/NavigationBar.tsx";
+import * as $$3 from "./islands/WebSocketDisplay.tsx";
+import * as $$4 from "./islands/live_matches.tsx";
+import * as $$5 from "./islands/matches.tsx";
 
 const manifest = {
   routes: {
@@ -32,10 +33,11 @@ const manifest = {
   },
   islands: {
     "./islands/Counter.tsx": $$0,
-    "./islands/NavigationBar.tsx": $$1,
-    "./islands/WebSocketDisplay.tsx": $$2,
-    "./islands/live_matches.tsx": $$3,
-    "./islands/matches.tsx": $$4,
+    "./islands/GSIDraft.tsx": $$1,
+    "./islands/NavigationBar.tsx": $$2,
+    "./islands/WebSocketDisplay.tsx": $$3,
+    "./islands/live_matches.tsx": $$4,
+    "./islands/matches.tsx": $$5,
   },
   baseUrl: import.meta.url,
   config,
